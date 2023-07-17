@@ -6,7 +6,6 @@
 // this function to have.
 // Execute `rustlings hint errors1` for hints!
 
-// I AM NOT DONE
 
 pub fn generate_nametag_text(name: String) -> Result<String, String> {
     if name.len() > 0 {
@@ -27,8 +26,8 @@ mod tests {
     #[test]
     fn generates_nametag_text_for_a_nonempty_name() {
         assert_eq!(
-            Ok(generate_nametag_text("Beyoncé".into())),
-            "Hi! My name is Beyoncé".to_string()
+            generate_nametag_text("Beyoncé".into()),
+            Ok("Hi! My name is Beyoncé".to_string())
         );
     }
 
